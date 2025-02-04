@@ -35,7 +35,7 @@
 		@apply block m-auto w-44 px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
 	}
 
-  .card {
+	.card {
     @apply border-2 border-solid border-color-grey text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark transition ease-in duration-200;
   }
 

@@ -1,3 +1,15 @@
+// header
+const navbar = document.querySelector('#header');
+
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    const shouldAddClass = window.scrollY > 100;
+    navbar.classList.toggle('bg-color-primary-dark', shouldAddClass);
+    navbar.classList.toggle('border-b', shouldAddClass);
+    navbar.classList.toggle('border-color-grey', shouldAddClass);
+  });
+}
+
 // Mobile menu
 const hamburger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');

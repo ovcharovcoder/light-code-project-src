@@ -1,6 +1,6 @@
-<!-- The site was developed based on the 'Name' figma layout
+<!-- The site was developed based on the 'MoneyMate' figma layout and Tailwind CSS
 Development author: Andriy Ovcharov
-Development date: 00/00/2000 -->
+Development date: 04/02/2025 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,11 +20,11 @@ Development date: 00/00/2000 -->
 
   
     </header>
-<header>
+<header id="header" class="sticky top-0 z-50">
 	<nav class="container flex justify-between items-center">
 		<!-- Logo -->
 		<div class="w-20 py-5 text-color-secondary font-bold text-3xl">
-			<a href="#home"> <span class="text-color-white">light</span>Code.</a>
+			<a href="#home"> <span class="text-color-white">Money</span>Mate.</a>
 		</div>
 		<div>
 			<!-- Navigation menu -->
@@ -90,7 +90,7 @@ Development date: 00/00/2000 -->
 			id="menu"
 			class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 z-10"
 		>
-			<ul class="h-full grid place-items-center py-20">
+			<ul class="h-full grid place-items-center py-52">
 				<li class="hLink">
 					<a
 						class="nav__menu-link"
@@ -362,12 +362,10 @@ Development date: 00/00/2000 -->
 										20<span class="text-sm font-normal tracking-widest">/per month</span>
 									</p>
 								</div>
-
 								<div class="py-10">
                   <span class="text-xl font-bold pb-3">Basic</span>
-									<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+									<p class="leading-relaxed pt-3">For Beginners Starting Their Business Journey</p>
 								</div>
-
 								<ul class="space-y-4 pb-10">
 									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 										<span class="pl-4">Expense Management</span>
@@ -385,7 +383,6 @@ Development date: 00/00/2000 -->
 										<span class="pl-4">Accounting System</span>
 									</li>
 								</ul>
-
 								<a class="card_btn" href="#">Get Started</a>
 						 </div>
 
@@ -393,15 +390,13 @@ Development date: 00/00/2000 -->
              <div id="card_1_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
 							<div class="relative">
 								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
-									120<span class="text-sm font-normal tracking-widest">/per month</span>
+									120<span class="text-sm font-normal tracking-widest">/per year</span>
 								</p>
 							</div>
-
 							<div class="py-10">
 								<span class="text-xl font-bold pb-3">Basic</span>
-								<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+								<p class="leading-relaxed pt-3">For Beginners Starting Their Business Journey</p>
 							</div>
-
 							<ul class="space-y-4 pb-10">
 								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 									<span class="pl-4">Expense Management</span>
@@ -419,7 +414,6 @@ Development date: 00/00/2000 -->
 									<span class="pl-4">Accounting System</span>
 								</li>
 							</ul>
-
 							<a class="card_btn" href="#">Get Started</a>
 					 </div>
 					</div>
@@ -434,12 +428,10 @@ Development date: 00/00/2000 -->
 										50<span class="text-sm font-normal tracking-widest">/per month</span>
 									</p>
 								</div>
-
 								<div class="py-10">
                   <span class="text-xl font-bold pb-3">Standart</span>
-									<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+									<p class="leading-relaxed pt-3">For Growing Businesses Seeking Global Expansion</p>
 								</div>
-
 								<ul class="space-y-4 pb-10">
 									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 										<span class="pl-4">Expense Management</span>
@@ -457,7 +449,6 @@ Development date: 00/00/2000 -->
 										<span class="pl-4">Accounting System</span>
 									</li>
 								</ul>
-
 								<a class="card_btn" href="#">Get Started</a>
 						 </div>
 
@@ -465,15 +456,13 @@ Development date: 00/00/2000 -->
              <div id="card_2_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
 							<div class="relative">
 								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
-									150<span class="text-sm font-normal tracking-widest">/per month</span>
+									150<span class="text-sm font-normal tracking-widest">/per year</span>
 								</p>
 							</div>
-
 							<div class="py-10">
 								<span class="text-xl font-bold pb-3">Standart</span>
-								<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+								<p class="leading-relaxed pt-3">For Growing Businesses Seeking Global Expansion</p>
 							</div>
-
 							<ul class="space-y-4 pb-10">
 								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 									<span class="pl-4">Expense Management</span>
@@ -491,7 +480,6 @@ Development date: 00/00/2000 -->
 									<span class="pl-4">Accounting System</span>
 								</li>
 							</ul>
-
 							<a class="card_btn" href="#">Get Started</a>
 					 </div>
 					</div>
@@ -506,12 +494,10 @@ Development date: 00/00/2000 -->
 										100<span class="text-sm font-normal tracking-widest">/per month</span>
 									</p>
 								</div>
-
 								<div class="py-10">
                   <span class="text-xl font-bold pb-3">Premium</span>
-									<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+									<p class="leading-relaxed pt-3">Global Scaling for Ambitious Brands</p>
 								</div>
-
 								<ul class="space-y-4 pb-10">
 									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 										<span class="pl-4">Expense Management</span>
@@ -529,7 +515,6 @@ Development date: 00/00/2000 -->
 										<span class="pl-4">Accounting System</span>
 									</li>
 								</ul>
-
 								<a class="card_btn" href="#">Get Started</a>
 						 </div>
 
@@ -537,15 +522,13 @@ Development date: 00/00/2000 -->
              <div id="card_3_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
 							<div class="relative">
 								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
-									500<span class="text-sm font-normal tracking-widest">/per month</span>
+									500<span class="text-sm font-normal tracking-widest">/per year</span>
 								</p>
 							</div>
-
 							<div class="py-10">
 								<span class="text-xl font-bold pb-3">Premium</span>
-								<p class="leading-relaxed pt-3">For Beginner Who Want To Scale Business Globaly</p>
+								<p class="leading-relaxed pt-3">Global Scaling for Ambitious Brands</p>
 							</div>
-
 							<ul class="space-y-4 pb-10">
 								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
 									<span class="pl-4">Expense Management</span>
@@ -563,18 +546,219 @@ Development date: 00/00/2000 -->
 									<span class="pl-4">Accounting System</span>
 								</li>
 							</ul>
-
 							<a class="card_btn" href="#">Get Started</a>
 					 </div>
 					</div>
-					  
 				</div>
 			</div>
 		</section>
 		<!-- Pricing end -->
+
+		<!-- Blog -->
+		<section id="blog">
+     <div class="container py-20">
+		 <div class="text-center m-auto mb-20 md:w-1/2">
+			<h2 class="text-xl font-bold text-color-secondary mb-4">Innovation And Quality Improvement</h2>
+			<p class="title"> Latest Updates, Solutions And Company News</p>
+		</div>
+
+		<div class="grid gap-10 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <!-- card 1 -->
+					 <div>
+						<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+							<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog1.webp" alt="img">
+
+							</div>
+							<div>
+								<div class="flex items-center gap-5 py-5">
+									<p>20 August 2022</p>
+									<p>1 min read</p>
+								</div>
+
+								<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">Four ways to cheer yourself up on Blue Monday!</a>
+								<p class="leading-relaxed my-5">On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor Salmon debate...</p>
+
+								<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+									<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+								</a>
+							</div>
+						
+					 </div>
+
+					   <!-- card 2 -->
+						 <div>
+							<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+								<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog2.webp" alt="img">
+	
+								</div>
+								<div>
+									<div class="flex items-center gap-5 py-5">
+										<p>20 August 2022</p>
+										<p>1 min read</p>
+									</div>
+	
+									<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">How to Organize Your budget for Maximum Productivity?</a>
+									<p class="leading-relaxed my-5">Global provider connected products for consumers, and enterprises worldwide, supply chain control is everything...</p>
+	
+									<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+										<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+									</a>
+								</div>
+							
+						 </div>
+
+						   <!-- card 3 -->
+					 <div>
+						<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+							<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog3.webp" alt="img">
+
+							</div>
+							<div>
+								<div class="flex items-center gap-5 py-5">
+									<p>20 August 2022</p>
+									<p>1 min read</p>
+								</div>
+
+								<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">Should Small Businesses Be Entitled to system?</a>
+								<p class="leading-relaxed my-5">Our team provides skilled & experienced managers who know the intricacies of this vertical and focus...</p>
+
+								<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+									<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+								</a>
+							</div>
+						
+					 </div>
+			</div>
+		</div>
+		</section>
+		<!-- Blog end -->
+
+		<!-- Download App -->
+		<section id="download-app" class="bg-color-primary-light">
+			<div class="container py-20 grid place-items-center">
+				<div class="text-center md:w-2/3 m-auto">
+          <h2 class="title">Download App Now And Save Your Money</h2>
+					<p class="leading-relaxed pt-5">Serving an impressive list of long-term money with experience and expertise in multiple industries.</p>
+          
+					<div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
+							<!-- ios -->
+						<a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70 transition-all duration-300 ease-in-out">
+							<img src="images/ios-store-dark.webp" alt="ios">
+						</a>
+
+						<!-- g-play -->
+						<a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70 transition-all duration-300 ease-in-out">
+							<img src="images/g-play-dark.webp" alt="ios">
+						</a>
+					</div>
+			</div>
+		</section>
+		<!-- Download App end -->
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="container py-20">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+					<h2 class="text-xl font-bold text-color-secondary mb-4">Have A Questation</h2>
+					<p class="title">Get In Touch</p>
+				</div>
+
+				<!-- Form -->
+				<form>
+					<div class="w-full m-auto text-center md:w-2/3">
+          <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+           <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Name"> 
+
+					 <input type="email" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Email"> 
+
+					 <input type="tel" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Phone"> 
+
+					 <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Company"> 
+					 </div>
+					 
+					 <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" ></textarea>
+
+					 <button class="btn mt-10">Send Message</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- Contact end -->
+
+		<!-- Footer -->
+		<footer id="footer">
+      <div class=" bg-color-primary-dark relative">
+				<div class="container py-10">
+          <div class="grid gap-10 md:grid-cols-3 pb-10">
+
+						<!-- About App -->
+            <div class="space-y-6">
+              <span class="font-bold text-lg">About App</span>
+							<p class="leading-relaxed">This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your Product Or Service For Your Clients</p>
+							<div class="flex gap-5 items-center">
+                   <p>Follow Us</p>
+								<!-- Social links -->
+							  <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+								  <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://x.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+									<i class="fa-brands fa-x-twitter cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://x.com" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+									 <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://www.instagram.com/instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+									 <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+							</div>
+						</div>
+
+							<!-- Quick Links -->
+              <div class="flex justify-between md:justify-around">
+                 <div class="space-y-6">
+									<span class="font-bold text-lg">Quick Links</span>
+									<ul class="space-y-3">
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="/"></a>Home</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Features</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Testimonial</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Pricing</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Blog</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Contact</li>
+									</ul>
+								 </div>
+								 <!-- Quick Links -->
+                 <div class="space-y-6">
+									<span class="font-bold text-lg">Help</span>
+									<ul class="space-y-3">
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>About Us</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Partners</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Career</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Reviews</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Terms & Conditions</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Help</li>
+									</ul>
+								 </div>
+					     </div>
+
+					      <!-- Form -->
+								 <div class="space-y-6">
+									<span class="font-bold text-lg">Newsletter</span>
+									<p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You</p>
+									<div class="flex items-center">
+                    <input class="w-3/4 text-color-grey bg-color-white p-2 lg:p-3 rounded-l-md focus-outline-none" placeholder="Enter Your Email">
+										<button type="submit" class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+											<i class="fa-solid fa-chevron-right"></i>
+										</button>
+									</div>
+							</div>
+				  </div>
+          <div class="flex justify-center pt-10 border-t border-color-grey">
+            <p>2025 &copy; MoneyMate. All Rights Reserved.</p>
+					</div>
+			  </div>
+			</div>
+		</footer>
 </main>
-
-
   <footer class="footer">
     <div class="container">
 
