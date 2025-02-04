@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  body {
+    @apply bg-color-primary tracking-wider text-color-white;
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-3xl md:text-4xl font-bold leading-snug;
+  }
+
+  .nav__menu-link {
+    @apply hover:text-color-secondary transition ease-in duration-200;
+  }
+
+  .btn {
+    @apply bg-color-secondary px-9 py-3 rounded-md capitalize font-bold text-color-white hover:opacity-80 transition ease-in duration-200 cursor-pointer;
+  }
+
+	.card_btn {
+		@apply block m-auto w-44 px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
+	}
+
+	.card {
+    @apply border-2 border-solid border-color-grey text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark transition ease-in duration-200;
+  }
+
+  .blob1 {
+    @apply w-80 h-80 bg-color-blob absolute top-10 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+  }
+
+  .blob2 {
+    @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+  }
+
+  .user-text {
+    @apply hidden;
+  }
+
+  .user-text.active-text {
+    @apply block;
+    animation: moveup 1s linear forwards;
+  }
+
+  .user-pic {
+    @apply transition-all ease-out duration-200;
+  }
+
+  .user-pic.active-pic {
+    border: 2px solid #ff7d3b;
+  }
+
+  @keyframes moveup {
+    0% {
+      margin-top: 40px;
+      opacity: 0;
+    }
+    50% {
+      margin-top: 20px;
+      opacity: 0.1;
+    }
+    100% {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+	.card-price {
+		perspective: 1000px;
+	}
+
+	.front, 
+	.back {
+    backface-visibility: hidden;
+		transition: all 0.4s ease;
+	}
+
+	.front {
+		overflow: hidden;
+	}
+}

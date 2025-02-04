@@ -1,0 +1,772 @@
+<!-- The site was developed based on the 'MoneyMate' figma layout and Tailwind CSS
+Development author: Andriy Ovcharov
+Development date: 04/02/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  
+  <body class="bg-color-primary tracking-wider">
+    <div class="wrapper">
+    <header class="header">
+  
+
+
+
+  
+    </header>
+<header id="header" class="sticky top-0 z-50">
+	<nav class="container flex justify-between items-center">
+		<!-- Logo -->
+		<div class="w-20 py-5 text-color-secondary font-bold text-3xl">
+			<a href="#home"> <span class="text-color-white">Money</span>Mate.</a>
+		</div>
+		<div>
+			<!-- Navigation menu -->
+			<ul class="hidden lg:flex items-center space-x-6">
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#home"
+						>Home</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#feature"
+						>Features</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#testimonial"
+						>Testimonial</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#pricing"
+						>Pricing</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#blog"
+						>Blog</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#contact"
+						>Contact</a
+					>
+				</li>
+				<li>
+					<a
+						class="btn"
+					>
+						Free trial
+				</a>
+				</li>
+			</ul>
+		</div> 
+		<!-- Mobile screen -->
+		<div id="hamburger" class="lg:hidden cursor-pointer z-50">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+
+		<!-- Mobile menu -->
+		<div
+			id="menu"
+			class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 z-10"
+		>
+			<ul class="h-full grid place-items-center py-52">
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#home"
+						>Home</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#feature"
+						>Features</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#testimonial"
+						>Testimonial</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#pricing"
+						>Pricing</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#blog"
+						>Blog</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#contact"
+						>Contact</a
+					>
+				</li>
+				<li>
+					<a class="btn">Free trial</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<main class="main">
+	<!-- Promo -->
+	<section id="home" class="relative">
+		<!-- Decorative elements -->
+		<div
+			class="blob1"></div>
+		<div
+			class="blob2"></div>
+		<div class="container py-20">
+			<div class="flex flex-col items-center z-20 md:flex-row">
+				<div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+					<h1 class="title mb-4">Awesome App for Your Financial</h1>
+					<p class="leading-relaxed mb-10">
+						This should be used to tell a story and let your users know a little
+						more about app and it’s use, How can benefit them.
+					</p>
+					<a class="btn">Download app</a>
+				</div>
+
+				<div class="md:w-1/2">
+					<img src="images/hero4.webp" alt="img" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section id="features" class="bg-color-primary-light">
+		<div class="container py-20">
+			<div class="text-center m-auto mb-20 md:w-1/2">
+				<h2 class="text-xl font-bold text-color-secondary mb-4">Our Future</h2>
+				<p class="title">Easy To Manage Your All Payments By Our App</p>
+			</div>
+
+			<!-- Cards -->
+			<div class="gap-12 grid lg:grid-cols-3 md:grid-cols-2 lg:gap-8 px-4 sm:px-6 lg:px-8">
+				<!-- Card 1 -->
+				<div class="card">
+					<div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+						<i class="fa-solid fa-calendar-days text-4xl"></i>
+					</div>
+					<h3 class="text-xl font-bold py-4">Expense Trackering</h3>
+					<p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+				</div> 
+
+				<!-- Card 2 -->
+				<div class="card">
+					<div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+						<i class="fa-solid fa-chart-column text-4xl"></i>
+					</div>
+					<h3 class="text-xl font-bold py-4">Finance Snapshot</h3>
+					<p class="leading-relaxed"> We use an application designed a testing gnose to keep away</p>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="card">
+					<div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+						<i class="fa-solid fa-phone text-4xl"></i>
+					</div>
+					<h3 class="text-xl font-bold py-4">Support 24/7</h3>
+					<p class="leading-relaxed"> We use an application designed a testing gnose to keep away</p>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+		<!-- Features end -->
+
+		<!-- Saving money -->
+	<section id="saving-money">
+<div class="container py-20 relative">
+	<!-- Decorative elements -->
+	<div
+	class="blob1"></div>
+<div
+	class="blob2"></div>
+	<div class="flex flex-col items-center justify-between md:flex-row">
+		<div class="mb-12 md:w-1/2">
+			<img src="images/hero3.webp" alt="img">
+		</div>
+		<div class="text-center md:text-left md:w-1/2 md:ml-20">
+			<h2 class="text-xl font-bold text-color-secondary mb-4">Saving Money</h2>
+				<p class="title mb-4">Best Financing App To Save Your Money</p>
+				<p class="leading-relaxed mb-10">Best financing app ever in the world. Easy to use and very user friendly for mobile banking. You can control your card easily and send money some one just one click.</p>
+				<a class="btn">Read More</a>
+		</div>
+	</div>
+</div>
+	</section>
+	<!-- Saving money end -->
+
+	<!-- How it works -->
+	<section id="how-it-works" class="bg-color-primary-light">
+		<div class="container py-20">
+			<div class="text-center m-auto mb-20 md:w-1/2">
+				<h2 class="text-xl font-bold text-color-secondary mb-4">How It Works</h2>
+				<p class="title">Grow Up Your Money Saving</p>
+			</div>
+
+			<div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+				<!-- Card 1 -->
+				 <div class="text-center cursor-pointer">
+					<div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+						<p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/images/line.webp')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">1</p>
+					</div>
+					
+					<h3 class="text-xl font-bold py-4">Install The App</h3>
+					<p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+				 </div>
+
+				<!-- Card 2 -->
+				 <div class="text-center cursor-pointer">
+					<div class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary">
+						<p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/images/line-bottom.webp')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">2</p>
+					</div>
+					<h3 class="text-xl font-bold py-4">Setup Your Profile</h3>
+					<p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+				 </div>
+
+				<!-- Card 3 -->
+				 <div class="text-center cursor-pointer">
+					<div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+						<p class="text-6xl">3</p>
+					</div>
+					<h3 class="text-xl font-bold py-4">Enjoy The Features!</h3>
+					<p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+				 </div>
+			</div>
+		</div>
+	</section>
+		<!-- How it works end -->
+
+		<!-- Testimonial -->
+		<section id="testimonial">
+			<div class="container py-20">
+				<div class="text-center m-auto mb-20 md:w-1/2">
+					<h2 class="text-xl font-bold text-color-secondary mb-4">User Review</h2>
+					<p class="title">What Clients Say About Our App After Use It</p>
+				</div>
+
+				<!-- Review container -->
+        <div class="mt-8">
+					<div class="flex items-center justify-center flex-wrap">
+						<img class="h-20 w-20 rounded-full p-1 m-1 cursor-pointer user-pic active-pic" onclick="showReview()" src="images/user1.webp" alt="avatar">
+						<img class="h-20 w-20 rounded-full p-1 m-1 cursor-pointer user-pic" onclick="showReview()" src="images/user2.webp" alt="avatar">
+						<img class="h-20 w-20 rounded-full p-1 m-1 cursor-pointer user-pic" onclick="showReview()" src="images/user3.webp" alt="avatar">
+						<img class="h-20 w-20 rounded-full p-1 m-1 cursor-pointer user-pic" onclick="showReview()" src="images/user4.webp" alt="avatar">
+						<img class="h-20 w-20 rounded-full p-1 m-1 cursor-pointer user-pic" onclick="showReview()" src="images/user5.webp" alt="avatar">
+					</div>
+
+					<div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+						<!-- User 1 -->
+						<div class="user-text active-text">
+							<p class="md:text-2x1 mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
+							<span class="font-bold text-color-secondary mb-1">Leila Domniuc</span>
+							<p>IOS developer</p>
+						</div>
+
+							<!-- User 2 -->
+						<div class="user-text">
+							<p class="md:text-2x1 mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
+							<span class="font-bold text-color-secondary mb-1">Vera Duncan</span>
+							<p>Flutter developer</p>
+						</div>
+
+							<!-- User 3 -->
+						<div class="user-text">
+							<p class="md:text-2x1 mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
+							<span class="font-bold text-color-secondary mb-1">Pirtle Karol</span>
+							<p>Android developer</p>
+						</div>
+
+							<!-- User 4 -->
+						<div class="user-text">
+							<p class="md:text-2x1 mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
+							<span class="font-bold text-color-secondary mb-1">Suzy Joe</span>
+							<p>React developer</p>
+						</div>
+
+							<!-- User 5 -->
+						<div class="user-text">
+							<p class="md:text-2x1 mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
+							<span class="font-bold text-color-secondary mb-1">Markin Nesus</span>
+							<p>Angular developer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonial end -->
+
+		<!-- Pricing -->
+		<section id="pricing" class="bg-color-primary-light">
+			<div class="container py-20">
+				<div class="text-center m-auto mb-20 md:w-1/2">
+					<h2 class="text-xl font-bold text-color-secondary mb-4">Pricing</h2>
+					<p class="title">Get In Reasonable Price</p>
+
+					<!-- Rounded switch -->
+					 <div class="mt-5 flex items-center justify-center gap-4">
+						<p>Bill Monthly</p>
+            <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full">
+							<input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
+							<span class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-grey rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+						</label>
+						<p>Bill Anually</p>
+					 </div>
+				</div>
+         
+				<!-- Cards -->
+				<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+         <!-- Card 1 -->
+					<div class="card-price relative h-auto w-auto">
+
+						<!-- Front size -->
+             <div id="card_1_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full">
+							  <div class="relative">
+                  <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+										20<span class="text-sm font-normal tracking-widest">/per month</span>
+									</p>
+								</div>
+								<div class="py-10">
+                  <span class="text-xl font-bold pb-3">Basic</span>
+									<p class="leading-relaxed pt-3">For Beginners Starting Their Business Journey</p>
+								</div>
+								<ul class="space-y-4 pb-10">
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Expense Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Card Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+										<span class="pl-4">Instant Statistics</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+										<span class="pl-4">Bookmark Function</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+										<span class="pl-4">Accounting System</span>
+									</li>
+								</ul>
+								<a class="card_btn" href="#">Get Started</a>
+						 </div>
+
+						 <!-- Back size -->
+             <div id="card_1_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
+							<div class="relative">
+								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+									120<span class="text-sm font-normal tracking-widest">/per year</span>
+								</p>
+							</div>
+							<div class="py-10">
+								<span class="text-xl font-bold pb-3">Basic</span>
+								<p class="leading-relaxed pt-3">For Beginners Starting Their Business Journey</p>
+							</div>
+							<ul class="space-y-4 pb-10">
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Expense Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Card Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+									<span class="pl-4">Instant Statistics</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+									<span class="pl-4">Bookmark Function</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+									<span class="pl-4">Accounting System</span>
+								</li>
+							</ul>
+							<a class="card_btn" href="#">Get Started</a>
+					 </div>
+					</div>
+
+					  <!-- Card 2 -->
+					<div class="card-price relative h-auto w-auto">
+
+						<!-- Front size -->
+             <div id="card_2_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full">
+							  <div class="relative">
+                  <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+										50<span class="text-sm font-normal tracking-widest">/per month</span>
+									</p>
+								</div>
+								<div class="py-10">
+                  <span class="text-xl font-bold pb-3">Standart</span>
+									<p class="leading-relaxed pt-3">For Growing Businesses Seeking Global Expansion</p>
+								</div>
+								<ul class="space-y-4 pb-10">
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Expense Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Card Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Instant Statistics</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Bookmark Function</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+										<span class="pl-4">Accounting System</span>
+									</li>
+								</ul>
+								<a class="card_btn" href="#">Get Started</a>
+						 </div>
+
+						 <!-- Back size -->
+             <div id="card_2_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
+							<div class="relative">
+								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+									150<span class="text-sm font-normal tracking-widest">/per year</span>
+								</p>
+							</div>
+							<div class="py-10">
+								<span class="text-xl font-bold pb-3">Standart</span>
+								<p class="leading-relaxed pt-3">For Growing Businesses Seeking Global Expansion</p>
+							</div>
+							<ul class="space-y-4 pb-10">
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Expense Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Card Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Instant Statistics</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Bookmark Function</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-grey"></i>
+									<span class="pl-4">Accounting System</span>
+								</li>
+							</ul>
+							<a class="card_btn" href="#">Get Started</a>
+					 </div>
+					</div>
+
+					<!-- Card 3 -->
+					<div class="card-price relative h-auto w-auto">
+
+						<!-- Front size -->
+             <div id="card_3_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full">
+							  <div class="relative">
+                  <p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+										100<span class="text-sm font-normal tracking-widest">/per month</span>
+									</p>
+								</div>
+								<div class="py-10">
+                  <span class="text-xl font-bold pb-3">Premium</span>
+									<p class="leading-relaxed pt-3">Global Scaling for Ambitious Brands</p>
+								</div>
+								<ul class="space-y-4 pb-10">
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Expense Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Card Management</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Instant Statistics</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Bookmark Function</span>
+									</li>
+									<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+										<span class="pl-4">Accounting System</span>
+									</li>
+								</ul>
+								<a class="card_btn" href="#">Get Started</a>
+						 </div>
+
+						 <!-- Back size -->
+             <div id="card_3_back" class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-grey h-full w-full absolute top-0 left-0">
+							<div class="relative">
+								<p class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+									500<span class="text-sm font-normal tracking-widest">/per year</span>
+								</p>
+							</div>
+							<div class="py-10">
+								<span class="text-xl font-bold pb-3">Premium</span>
+								<p class="leading-relaxed pt-3">Global Scaling for Ambitious Brands</p>
+							</div>
+							<ul class="space-y-4 pb-10">
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Expense Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Card Management</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Instant Statistics</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Bookmark Function</span>
+								</li>
+								<li> <i class="fa-solid fa-bookmark text-color-secondary"></i>
+									<span class="pl-4">Accounting System</span>
+								</li>
+							</ul>
+							<a class="card_btn" href="#">Get Started</a>
+					 </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Pricing end -->
+
+		<!-- Blog -->
+		<section id="blog">
+     <div class="container py-20">
+		 <div class="text-center m-auto mb-20 md:w-1/2">
+			<h2 class="text-xl font-bold text-color-secondary mb-4">Innovation And Quality Improvement</h2>
+			<p class="title"> Latest Updates, Solutions And Company News</p>
+		</div>
+
+		<div class="grid gap-10 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <!-- card 1 -->
+					 <div>
+						<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+							<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog1.webp" alt="img">
+
+							</div>
+							<div>
+								<div class="flex items-center gap-5 py-5">
+									<p>20 August 2022</p>
+									<p>1 min read</p>
+								</div>
+
+								<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">Four ways to cheer yourself up on Blue Monday!</a>
+								<p class="leading-relaxed my-5">On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor Salmon debate...</p>
+
+								<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+									<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+								</a>
+							</div>
+						
+					 </div>
+
+					   <!-- card 2 -->
+						 <div>
+							<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+								<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog2.webp" alt="img">
+	
+								</div>
+								<div>
+									<div class="flex items-center gap-5 py-5">
+										<p>20 August 2022</p>
+										<p>1 min read</p>
+									</div>
+	
+									<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">How to Organize Your budget for Maximum Productivity?</a>
+									<p class="leading-relaxed my-5">Global provider connected products for consumers, and enterprises worldwide, supply chain control is everything...</p>
+	
+									<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+										<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+									</a>
+								</div>
+							
+						 </div>
+
+						   <!-- card 3 -->
+					 <div>
+						<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+							<img class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" src="images/blog3.webp" alt="img">
+
+							</div>
+							<div>
+								<div class="flex items-center gap-5 py-5">
+									<p>20 August 2022</p>
+									<p>1 min read</p>
+								</div>
+
+								<a href="#blog" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline transition-all duration-300 ease-in-out">Should Small Businesses Be Entitled to system?</a>
+								<p class="leading-relaxed my-5">Our team provides skilled & experienced managers who know the intricacies of this vertical and focus...</p>
+
+								<a href="#blog" class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+									<span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
+								</a>
+							</div>
+						
+					 </div>
+			</div>
+		</div>
+		</section>
+		<!-- Blog end -->
+
+		<!-- Download App -->
+		<section id="download-app" class="bg-color-primary-light">
+			<div class="container py-20 grid place-items-center">
+				<div class="text-center md:w-2/3 m-auto">
+          <h2 class="title">Download App Now And Save Your Money</h2>
+					<p class="leading-relaxed pt-5">Serving an impressive list of long-term money with experience and expertise in multiple industries.</p>
+          
+					<div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
+							<!-- ios -->
+						<a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70 transition-all duration-300 ease-in-out">
+							<img src="images/ios-store-dark.webp" alt="ios">
+						</a>
+
+						<!-- g-play -->
+						<a href="#" class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70 transition-all duration-300 ease-in-out">
+							<img src="images/g-play-dark.webp" alt="ios">
+						</a>
+					</div>
+			</div>
+		</section>
+		<!-- Download App end -->
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="container py-20">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+					<h2 class="text-xl font-bold text-color-secondary mb-4">Have A Questation</h2>
+					<p class="title">Get In Touch</p>
+				</div>
+
+				<!-- Form -->
+				<form>
+					<div class="w-full m-auto text-center md:w-2/3">
+          <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+           <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Name"> 
+
+					 <input type="email" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Email"> 
+
+					 <input type="tel" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Phone"> 
+
+					 <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" placeholder="Company"> 
+					 </div>
+					 
+					 <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" ></textarea>
+
+					 <button class="btn mt-10">Send Message</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- Contact end -->
+
+		<!-- Footer -->
+		<footer id="footer">
+      <div class=" bg-color-primary-dark relative">
+				<div class="container py-10">
+          <div class="grid gap-10 md:grid-cols-3 pb-10">
+
+						<!-- About App -->
+            <div class="space-y-6">
+              <span class="font-bold text-lg">About App</span>
+							<p class="leading-relaxed">This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your Product Or Service For Your Clients</p>
+							<div class="flex gap-5 items-center">
+                   <p>Follow Us</p>
+								<!-- Social links -->
+							  <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+								  <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://x.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+									<i class="fa-brands fa-x-twitter cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://x.com" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+									 <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+								<a href="https://www.instagram.com/instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+									 <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary transition-all duration-300 ease-in-out"></i>
+								</a>
+							</div>
+						</div>
+
+							<!-- Quick Links -->
+              <div class="flex justify-between md:justify-around">
+                 <div class="space-y-6">
+									<span class="font-bold text-lg">Quick Links</span>
+									<ul class="space-y-3">
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="/"></a>Home</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Features</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Testimonial</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Pricing</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Blog</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Contact</li>
+									</ul>
+								 </div>
+								 <!-- Quick Links -->
+                 <div class="space-y-6">
+									<span class="font-bold text-lg">Help</span>
+									<ul class="space-y-3">
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>About Us</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Partners</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Career</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Reviews</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Terms & Conditions</li>
+										<li class="underline hover:no-underline hover:text-color-secondary transition-all duration-300 ease-in-out cursor-pointer"><a href="#"></a>Help</li>
+									</ul>
+								 </div>
+					     </div>
+
+					      <!-- Form -->
+								 <div class="space-y-6">
+									<span class="font-bold text-lg">Newsletter</span>
+									<p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You</p>
+									<div class="flex items-center">
+                    <input class="w-3/4 text-color-grey bg-color-white p-2 lg:p-3 rounded-l-md focus-outline-none" placeholder="Enter Your Email">
+										<button type="submit" class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+											<i class="fa-solid fa-chevron-right"></i>
+										</button>
+									</div>
+							</div>
+				  </div>
+          <div class="flex justify-center pt-10 border-t border-color-grey">
+            <p>2025 &copy; MoneyMate. All Rights Reserved.</p>
+					</div>
+			  </div>
+			</div>
+		</footer>
+</main>
+  <footer class="footer">
+    <div class="container">
+
+    </div>	
+  </footer>
+  </div> 
+  <!-- END/ wrapper -->
+  
+  <script src="js/main.min.js"></script>
+  </body>
+</html>
