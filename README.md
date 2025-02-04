@@ -7,4 +7,4 @@
 
 <h3>Technologies Used: HTML, SCSS, BEM, GIT, Tailwind CSS, JavaScript</h3>
 
-<p>The site in the form of a completed front-end version is located at: https://ovcharovcoder.github.io/money-mate-website</p>
+<p>The site in the form of a completed front-end version is located at: https://github.com/ovcharovcoder/money-mate-website</p>
