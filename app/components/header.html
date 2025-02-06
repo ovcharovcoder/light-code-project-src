@@ -10,10 +10,123 @@
   
   <body class="bg-color-primary tracking-wider">
     <div class="wrapper">
-    <header class="header">
-  
+    <header id="header" class="header sticky top-0 z-50">
+	<nav class="container flex justify-between items-center">
+		<!-- Logo -->
+		<div class="w-20 py-5 text-color-secondary font-bold text-3xl">
+			<a href="#home"> <span class="text-color-white">Money</span>Mate.</a>
+		</div>
+		<div>
+			<!-- Navigation menu -->
+			<ul class="hidden lg:flex items-center space-x-6">
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#home"
+						>Home</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#feature"
+						>Features</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#testimonial"
+						>Testimonial</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#pricing"
+						>Pricing</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#blog"
+						>Blog</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav__menu-link"
+						href="#contact"
+						>Contact</a
+					>
+				</li>
+				<li>
+					<a
+						class="btn"
+					>
+						Free trial
+				</a>
+				</li>
+			</ul>
+		</div> 
+		<!-- Mobile screen -->
+		<div id="hamburger" class="lg:hidden cursor-pointer z-50">
+			<i class="fa-solid fa-bars"></i>
+		</div>
 
-
-
-  
-    </header>
+		<!-- Mobile menu -->
+		<div
+			id="menu"
+			class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 z-10"
+		>
+			<ul class="h-full grid place-items-center py-52">
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#home"
+						>Home</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#"
+						>s</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#testimonial"
+						>Testimonial</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#pricing"
+						>Pricing</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#blog"
+						>Blog</a
+					>
+				</li>
+				<li class="hLink">
+					<a
+						class="nav__menu-link"
+						href="#contact"
+						>Contact</a
+					>
+				</li>
+				<li>
+					<a class="btn">Free trial</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
